@@ -11,24 +11,24 @@ commits = [
 ]
 
 while True:
-  c = random.randint(0, len(commits) - 1)
+    c = random.randint(0, len(commits) - 1)
 
-  now = datetime.now()
-  dt_string = now.strftime("%H:%M")
+    now = datetime.now()
+    dt_string = now.strftime("%H:%M")
 
-  if dt_string == "16:55":
-    try:
-      with open('README.md', 'a+') as f:
-        f.write(commits[c] + '\n') 
-    except FileNotFoundError as e:
-      print('File not found')
+    if dt_string == "17:41":
+        try:
+            with open('README.md', 'a+') as f:
+                f.write(commits[c] + '\n')
+        except FileNotFoundError as e:
+            print('File not found')
 
-    os.system('git add .')
-    git_comment = str("git commit -m {}{}{}".format("'", commits[c], "'"))
+        os.system('git add .')
+        git_comment = str("git commit -m {}{}{}".format("'", commits[c], "'"))
 
-    os.system(git_comment)
-    os.system("git push -u origin master")
-    break
-  else:
-    print('Nothing to push')
-    time.sleep(30)
+        os.system(git_comment)
+        os.system("git push -u origin master")
+        break
+    else:
+        print('Nothing to push')
+        time.sleep(30)
