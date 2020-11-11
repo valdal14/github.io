@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Zanetti Consumption</title>
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/flatly/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="containerFirst">
+      <div class="row">
+        <div class="col-8">
+          <canvas id="myChart"></canvas>
+        </div>
+        <div class="col-4">
+          <img src="BVMC-PSTX91WE-1.jpg" alt="coffe machine" />
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="containerFilters">
+      <div class="row">
+        <div class="col-4"><h4>Subscription History</h4></div>
+        <div class="col-1">
+          <button type="button" class="btn btn-primary">
+            Filter
+          </button>
+        </div>
+        <div class="col-4"><h4>From: August 2019 to January 2020</h4></div>
+        <div class="col-1">
+          <button type="button" class="btn btn-primary">
+            Modify
+          </button>
+        </div>
+        <div class="col-1">
+          <button type="button" class="btn btn-primary">
+            Get Help
+          </button>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="containerTable">
+      <div class="col-12">
+        <!-- Container One -->
+        <div class="">
+          <div class="row">
+            <div class="col-md-2 col-sm-12">
+              <div class="desc">
+                Order number
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="desc">
+                Date
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="desc">
+                Status
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="desc">
+                Shipped to
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="desc">
+                Quantity
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="desc">Action</div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Container One -->
+        <!-- Container 2 -->
+        <div class="">
+          <br />
+          <div class="row">
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                OC12345
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                18/08/2019
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                Shipped
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                Via Arrigoni 1, Piacenza
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                70
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                <button type="button" class="btn btn-danger btn-sm">
+                  expired
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Container 2-->
+        <div class="">
+          <hr />
+        </div>
+        <!-- Container 3 -->
+        <div class="">
+          <br />
+          <div class="row">
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                OC12346
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                22/09/2019
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                Shipped
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                Via Arrigoni 1, Piacenza
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                80
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                <button type="button" class="btn btn-danger btn-sm">
+                  expired
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Container 3-->
+        <div class="">
+          <hr />
+        </div>
+        <!-- Container 3 -->
+        <div class="">
+          <br />
+          <div class="row">
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                OC12347
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                24/10/2019
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                Shipped
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                Via Arrigoni 1, Piacenza
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                85
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                <button type="button" class="btn btn-danger btn-sm">
+                  expired
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Container 3-->
+        <div class="">
+          <hr />
+        </div>
+        <!-- Container 3 -->
+        <div class="">
+          <br />
+          <div class="row">
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                OC12348
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                20/11/2019
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                Shipped
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                Via Arrigoni 1, Piacenza
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                82
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                <button type="button" class="btn btn-danger btn-sm">
+                  expired
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Container 3-->
+        <div class="">
+          <hr />
+        </div>
+        <!-- Container 3 -->
+        <div class="">
+          <br />
+          <div class="row">
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                OC12349
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                20/12/2019
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                Shipped
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                Via Arrigoni 1, Piacenza
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                100
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                <button type="button" class="btn btn-danger btn-sm">
+                  expired
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Container 3-->
+        <div class="">
+          <hr />
+        </div>
+        <!-- Container 3 -->
+        <div class="">
+          <br />
+          <div class="row">
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                OC12350
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                23/01/2020
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                Updated
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                Via Arrigoni 1, Piacenza
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                120
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="productDetail">
+                <button type="button" class="btn btn-primary btn-sm">
+                  modify
+                </button>
+                <button type="button" class="btn btn-primary btn-sm">
+                  suspend
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Container 3-->
+        <div class="">
+          <hr />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script>
+    var ctx = document.getElementById("myChart").getContext("2d");
+    var chart = new Chart(ctx, {
+      // The type of chart we want to create
+      type: "bar",
+
+      // The data for our dataset
+      data: {
+        labels: [
+          "Jul - 19",
+          "Aug - 19",
+          "Sep - 19",
+          "Oct - 19",
+          "Nov - 19",
+          "Dec - 19",
+          "Jan - 20"
+        ],
+        datasets: [
+          {
+            label: "Capsule Consumption",
+            backgroundColor: "rgb(204, 33, 49)",
+            borderColor: "rgb(255, 99, 132)",
+            data: [0, 70, 80, 85, 82, 100, 120]
+          }
+        ]
+      },
+
+      // Configuration options go here
+      options: {}
+    });
+  </script>
+</html>
