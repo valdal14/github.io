@@ -16,7 +16,7 @@ while True:
   now = datetime.now()
   dt_string = now.strftime("%H:%M")
 
-  if dt_string == "16:23":
+  if dt_string == "16:55":
     try:
       with open('README.md', 'a+') as f:
         f.write(commits[c] + '\n') 

@@ -9,3 +9,4 @@ Changed the js logic to load the images
 Updated the index.html file
 Updated the index.html file
 Updated the index.html file
+Changed the js logic to load the images
